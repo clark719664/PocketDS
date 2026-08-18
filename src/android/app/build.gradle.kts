@@ -64,7 +64,7 @@ android {
     }
 
     defaultConfig {
-        applicationId = "dev.eden.eden_emulator"
+        applicationId = "com.in3rt1a.pocketds"
         minSdk = 24
         targetSdk = 36
         versionName = getGitVersion()
@@ -190,8 +190,8 @@ android {
             isDefault = true
             minSdk = 33
 
-            manifestPlaceholders += mapOf("appNameBase" to "Eden")
-            resValue("string", "app_name_suffixed", "Eden")
+            manifestPlaceholders += mapOf("appNameBase" to "PocketDS")
+            resValue("string", "app_name_suffixed", "PocketDS")
 
             ndk {
                 abiFilters += listOf("arm64-v8a")
@@ -203,7 +203,6 @@ android {
             minSdk = 35
             manifestPlaceholders += mapOf("appNameBase" to "Eden Optimized")
             resValue("string", "app_name_suffixed", "Eden Optimized")
-            applicationId = "com.miHoYo.Yuanshen"
 
             externalNativeBuild {
                 cmake {
