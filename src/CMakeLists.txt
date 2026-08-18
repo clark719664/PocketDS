@@ -32,12 +32,6 @@ if (YUZU_LEGACY)
     add_compile_definitions(YUZU_LEGACY)
 endif()
 
-# Genshin Spoof (android only)
-if (GENSHIN_SPOOF)
-    message(WARNING "Making Genshin spoof build")
-    add_compile_definitions(GENSHIN_SPOOF)
-endif()
-
 # Build ID (mingw only right now)
 # Pretty much just refers to the CI "target" for this build
 if (NOT BUILD_ID)

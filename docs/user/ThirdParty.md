@@ -52,13 +52,6 @@ Note: Even though the site isn't Codeberg, it uses the same Forgejo/Gitea backen
         <entry>dev.eden.eden_emulator/org.yuzu.yuzu_emu.activities.EmulationActivity</entry>
     </rule>
 </emulator>
-
-<!-- Optimized -->
-<emulator name="EDEN">
-    <rule type="androidpackage">
-        <entry>com.miHoYo.Yuanshen/org.yuzu.yuzu_emu.activities.EmulationActivity</entry>
-    </rule>
-</emulator>
 ```
 
 1. Add this line of text to your `es_systems.xml` underneath where the rest of your switch system entries are:

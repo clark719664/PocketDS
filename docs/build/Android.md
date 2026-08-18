@@ -39,8 +39,7 @@ Eden by default will be cloned into:
 `export ANDROID_NDK_ROOT=path/to/ndk`.
 4. Navigate to `eden/src/android`.
 5. Then Build with `./gradlew assembleRelWithDebInfo`.
-6. To build the optimised build use `./gradlew assembleGenshinSpoofRelWithDebInfo`.
-7. You can pass extra variables to cmake via `-PYUZU_ANDROID_ARGS="-D..."`
+6. You can pass extra variables to cmake via `-PYUZU_ANDROID_ARGS="-D..."`
 
 Remember to have a Java SDK installed if not already, on Debian and similar this is done with `sudo apt install openjdk-17-jdk`.
 
@@ -63,7 +62,7 @@ Options:
     -r, --release           Enable update checker. If set, sets the DEVEL bool variable to false.
                             By default, DEVEL is true.
     -t, --target <FLAVOR>   Build flavor (variable: TARGET)
-                            Valid values are: legacy, optimized, standard
+                            Valid values are: legacy, standard
                             Default: standard
     -b, --build-type <TYPE> Build type (variable: TYPE)
                             Valid values are: Release, RelWithDebInfo, Debug
@@ -80,8 +79,8 @@ Examples:
   * `.ci/android/build.sh -r -t legacy`
 * Build standard release with debug info without update checker for phones:
   * `.ci/android/build.sh -b RelWithDebInfo`
-* Build optimized release with update checker for ChromeOS:
-  * `.ci/android/build.sh -c -r -t optimized`
+* Build standard release with update checker for ChromeOS:
+  * `.ci/android/build.sh -c -r -t standard`
 
 ### Additional Resources
 

@@ -198,23 +198,6 @@ android {
             }
         }
 
-        create("genshinSpoof") {
-            dimension = "version"
-            minSdk = 35
-            manifestPlaceholders += mapOf("appNameBase" to "Eden Optimized")
-            resValue("string", "app_name_suffixed", "Eden Optimized")
-
-            externalNativeBuild {
-                cmake {
-                    arguments.add("-DGENSHIN_SPOOF=ON")
-                }
-            }
-
-            ndk {
-                abiFilters += listOf("arm64-v8a")
-            }
-        }
-
         create("legacy") {
             dimension = "version"
             minSdk = 29
