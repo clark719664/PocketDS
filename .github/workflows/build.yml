@@ -1,4 +1,6 @@
 name: build
+# trigger registration: force GitHub to (re)scan for workflows after the
+# repo's initial full-history push didn't trigger an Actions scan on its own.
 
 on:
   push:
