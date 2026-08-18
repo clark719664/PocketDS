@@ -83,9 +83,11 @@ std::vector<Asset> Release::GetPlatformAssets() const {
 #elif defined(ARCHITECTURE_arm64)
 #ifdef YUZU_LEGACY
     find_asset("Standard", {"legacy.apk"});
+#elif defined(GENSHIN_SPOOF)
+    find_asset("Standard", {"optimized.apk"});
 #else
     find_asset("Standard", {"standard.apk"});
-#endif // YUZU_LEGACY
+#endif // GENSHIN_SPOOF
 #endif // ARCHITECTURE_arm64
 #endif // __APPLE__
     return found_assets;
